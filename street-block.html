@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Street Block | CSS</title>
+  <style>
+    body{
+      background-color: #333;
+    }
+
+    .street{
+      border: 1px dotted black;
+    }
+
+    .road{
+      border: 1px dotted black;
+      background-color: rgba(116, 110, 110, 0.199);
+      width: inherit;
+      height: 100px;
+    }
+
+    .right-band{
+      width: inherit;
+      height: 48px;
+      border-bottom: 5px double antiquewhite;
+    }
+
+    .upper-band{
+      width: inherit;
+      height:24px ;
+      border-bottom: 1px dashed white;
+    }
+
+    .left-band{
+      width: inherit;
+      height: 23px;
+      border-bottom:1px dashed white;
+    }
+
+    
+    .house{
+      
+      height: 150px;
+      width: 100px;
+      /*border: 1px solid green;*/
+      display: inline-block;
+      margin-right:20px;
+      margin-left: 20px;
+    }
+
+    .building-tall{
+      display: inline-block;
+      height: 300px;
+      width: 100px;
+      background-color: beige;
+    }
+
+    .door-building-tall{
+      height: 70px;
+      width: 30px;
+      border: 2px solid black;
+      transform: translateX(30px) translateY(14px);
+    }
+
+    .floor1-building-tall{
+      width: inherit;
+      height:60px;
+      border-bottom: 1px solid black;
+    }
+
+    .floor2-building-tall{
+      width: inherit;
+      height:60px;
+      border-bottom: 1px solid black;
+    }
+
+    .floor3-building-tall{
+      width: inherit;
+      height:60px;
+      border-bottom: 1px solid black;
+    }
+
+    .window-floor1-tall{
+      width: 80px;
+      height: 40px;
+      border: 1px solid black;
+      margin-left: 8px;
+      margin-top: 10px;
+    }
+    .window-floor2-tall{
+      width: 80px;
+      height: 40px;
+      border: 1px solid black;
+      margin-left: 8px;
+      margin-top: 10px;
+    }
+    .window-floor3-tall{
+      width: 80px;
+      height: 40px;
+      border: 1px solid black;
+      margin-left: 8px;
+      margin-top: 10px;
+    }
+
+  
+    .cloud{
+      display: inline-block;
+      width: 50px;
+      height: 20px;
+      /*background-color:lightblue;*/
+      vertical-align: top;
+      padding-left: 20px;
+      padding-top: 30px;
+      margin-left:20px
+
+    }
+
+    .tree{
+      display: inline-block;
+      margin-left:-70px;
+      margin-right: 20px;
+    }
+
+
+    .building-small{
+      display: inline-block;
+      height: 200px;
+      width: 100px;
+      background-color: aquamarine;
+    }
+
+    .door-building-small{
+      width: 30px;
+      height: 60px;
+      border:2px solid darkblue;
+
+      transform:translateX(33px) translateY(137px)
+    }
+
+    .floor1-small{
+      height: 55px;
+      width: inherit;
+      border-bottom:1px solid darkblue;
+    }
+
+    .windowA-floor1-small{
+      width: 70px;
+      height: 30px;
+      border: 1px solid darkblue;
+      margin-left: 13px;
+       /* cum pot sa dau mai jos fereastra. margin-top nu merge. coboara tot etajul?*/
+      
+    }
+   
+    .floor2-small{
+      height: 55px;
+      width: inherit;
+      border-bottom:1px solid darkblue;
+      transform: translateY(-120px);
+    }
+
+    .bench{
+      display: inline-block;
+    }
+
+    .house-roof{
+      height: 0px;
+      width: 0px;
+      /*background-color: red;*/
+      /*TRIANGLE*/
+      border: 50px solid white;
+      border-top-width: 0px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: brown;
+      border-bottom-width: 70px;
+
+    }
+
+    .house-wall{
+      background-color: antiquewhite;
+      height: 80px;
+    }
+
+    .house-door{
+      width: 26px;
+      height: 54px;
+      border: 2px solid black;
+
+      transform: translateX(35px) translateY(23px); 
+      display: inline-block;
+      
+    }
+
+    .house-window-left{
+      width: 20px;
+      height: 20px;
+      border: 1px solid brown;
+
+      display: inline-block;
+      vertical-align: top;
+      margin-left:-27px ;
+      margin-top: 15px;
+    }
+
+    .section-windowl{
+      width: 9px;
+      height: inherit;
+      border-right: 1px solid brown;
+    }
+
+    
+    .house-window-right{
+      width: 20px;
+      height: 20px;
+      border: 1px solid brown;
+
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 15px;
+      transform: translateX(38px);
+    }
+    
+    .section-windowr{
+      width: inherit;
+      height: 9px;
+      border-bottom:1px solid brown;
+    }
+
+    .horn{
+      background-color: brown;
+      width: 10px;
+      height: 20px;
+      transform: translateX(10px) translateY(8px);
+    }
+
+   
+    
+  </style>
+</head>
+<body>
+
+  <div class="street">
+    <div class="house">
+      <div class="house-roof">
+        <div class="horn"></div>
+      </div>
+      <div class="house-wall">
+        <div class="house-door">
+          <!-- section the window-->
+        </div>
+
+        <div class="house-window-left">
+          <div class="section-windowl"></div>
+        </div>
+
+        <div class="house-window-right">
+          <div class="section-windowr"></div>
+        </div>
+      </div>
+      </div>
+      <div class="building-tall">
+        <div class="floor3-building-tall">
+          <div class="window-floor1-tall"></div>
+        </div>
+        <div class="floor2-building-tall">
+          <div class="window-floor2-tall"></div>
+        </div>
+        <div class="floor1-building-tall">
+          <div class="window-floor3-tall"></div>
+        </div>
+        <div class="door-building-tall"></div>
+      </div>
+      
+      
+
+      <div class="cloud">
+        <img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/48/cloud-icon.png" alt="">
+      </div>
+
+      <div class="tree">
+        <img src="https://icons.iconarchive.com/icons/icojam/new-year/72/christmas-tree-2-icon.png" alt="">
+      </div>
+
+      <div class="building-small">
+        <div class="door-building-small"></div>
+        <div class="floor1-small">
+          <div class="windowA-floor1-small">
+            
+          </div>
+         
+        </div>
+        <div class="floor2-small"></div>
+      </div>
+        
+       
+        <div class="bench">
+          <img src="https://icons.iconarchive.com/icons/artdesigner/urban-stories/64/Bench-icon.png" alt="">
+        </div>
+    </div>
+  </div>
+
+  <div class="road">
+    <div class="right-band">
+      <div class="upper-band"></div>
+    </div>
+    <div class="left-band"></div>
+  </div>
+
+  
+  
+</body>
+</html>

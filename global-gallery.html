@@ -1,0 +1,66 @@
+<!--
+NOTICE
+PARENT>CHILD blocks- vertical margin overlap
+greater wins
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Gallery | CSS</title>
+  <style>
+    body{
+      background-color: #222;
+    }
+
+    img{
+      width: 200px;
+      border: 20px solid white;
+      margin-right: -122px;
+      margin-left: -122px;
+    }
+
+    #gallery{
+      margin-top: 150px;
+      text-align: center;
+      /*border: 2px solid red;*/
+
+    }
+
+    .i-1{
+      transform: rotate(-40deg);
+      border-color: #999999;
+    }
+    .i-2{
+      transform: rotate(-20deg);
+      border-color:  #b3b3b3;
+    }
+    .i-3{
+      transform: rotate(0deg);
+      border-color: #cccccc;
+    }
+    .i-4{
+      transform: rotate(200deg);
+      border-color: #e6e6e6;
+    }
+    .i-5{
+      transform: rotate(40deg);
+    }
+  </style>
+</head>
+<body>
+
+  <p id="gallery">
+    <img class="i-1" src="https://i.picsum.photos/id/527/400/600.jpg?hmac=KtuxWubDepJtxZJK2HwEWMwTRAZ-bZR8-ZcvzbbN4CE" alt="">
+    <img class="i-2" src="https://i.picsum.photos/id/998/400/600.jpg?hmac=FaX1QTN0jgxKiqyM4vshF5eqM6bh_eyJtvJf4wjy3Os" alt="">
+    <img class="i-3" src="https://i.picsum.photos/id/80/400/600.jpg?hmac=Ys4e3lnSNyCwzcwijcNLa4oB7Y5p-x-QrKl_GYRmKRE" alt="">
+    <img class="i-4" src="https://i.picsum.photos/id/545/400/600.jpg?hmac=5CLIoOMi-iSvKJf3Obafb1wxuwvu2J5fQD5Ib8RWTBY" alt="">
+    <img class="i-5" src="https://i.picsum.photos/id/941/400/600.jpg?hmac=ibW-k_VwxNSoyOIPrOu9hOY5eLsuJ0iUQZhF74pGaj0" alt="">
+  </p>
+  
+</body>
+</html>
