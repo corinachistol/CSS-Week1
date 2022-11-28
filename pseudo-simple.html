@@ -1,0 +1,62 @@
+<!--
+  d. pseudo selectors  they are predefined
+      -visual feedback
+      - create dynamic styles
+      -elememt states (mouse jestures, touch, active,checked, ...)
+
+      *state selectors > change styles based on STATE =selector de stare
+
+      :pseudo{
+
+      }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selector | :pseudo - button</title>
+  <style>
+    body{
+      background-color: #222;
+    }
+
+    .call-for-action{
+      font-family: arial;
+      border-bottom: 1px dashed #ccc;
+      color: #999;
+      padding: 10px;
+    }
+
+    .btn{
+      color: white;
+      background-color: transparent;
+      border: 2px solid white;
+      font-size: 18px;
+      padding: 6px 12px 6px 12px;
+      margin-left: 6px;
+      margin-right: 6px;
+
+      /* new */
+      border-radius:20px;
+      transition: 0.25s;
+    }
+
+    /*PSEUDO SELECTOR*/
+
+    .btn:hover{
+      color: orange;
+      background-color: #333;
+      border-color: orangered;
+       
+    }
+  </style>
+</head>
+<body>
+
+  <label class="call-for-action">
+    To start the training hit <button class="btn"> this button</button> !
+  </label>
+  
+</body>
+</html>
