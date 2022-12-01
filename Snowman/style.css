@@ -1,0 +1,128 @@
+body{
+  background-image:url('media/bg1.jpg') ;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  margin:0;
+  height: 485px;
+    
+
+  padding-top:140px;
+  
+}
+
+/*
+
+head 100
+body150
+feet 200
+
+H body=625px
+H pozei e mai mare 1332*850
+*/
+
+#snowman{
+/*border: 1px solid red;*/
+height:450px ;
+width: 200px;
+/*margin-top:150px;*/
+margin-left: 700px;
+}
+
+.head{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 100%;
+  margin-left: 50px;
+
+  background-image: radial-gradient(white, blue);
+
+  
+}
+
+.eyes{
+  text-align: center;
+  padding-top : 20px;
+  color:blue;
+  font-size:22px; 
+}
+
+.body{
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  border-radius: 100%;
+  margin-left: 25px;
+
+  background-image: radial-gradient(white, blue);
+
+ margin-top: -20px;
+}
+
+.feet{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 100%;
+
+  background-image: radial-gradient(white, blue);
+
+  margin-top: -20px;
+}
+
+
+.left-foot{
+  border: 1px solid black;
+  width: 30px;
+  height: 60px;
+  background-color: black;
+  
+
+  border-radius: 100%;
+
+  display: inline-block;
+
+  margin-left: 45px;
+
+  
+
+  
+}
+
+.right-foot{
+  border: 1px solid black;
+  width: 30px;
+  height: 60px;
+  background-color: black;
+
+  border-radius: 100%;
+
+  margin-top:140px;
+  margin-left: 35px;
+
+  display: inline-block;
+  
+
+
+ 
+}
+
+.button{
+  width: 15px;
+  height: 15px;
+  background-color:black;
+  margin: 2px ;
+
+  border-radius: 100%;
+
+  margin-left:70px;
+  margin-bottom: 30px;
+}
+
+.nose{
+  text-align: center;
+  color:brown;
+ margin-right:20px;
+ margin-top: -10px;
+}
