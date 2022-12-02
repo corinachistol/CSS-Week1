@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>APP TAB example | Pseudo</title>
+  <style>
+    .tabs{
+      /*border: 1px dotted black;*/
+      
+      list-style: none;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    .tab-item{
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      display: inline-block;
+
+      padding: 20px 10px;
+      margin: 5px;
+      text-align: center;
+
+      height: 90px;
+    }
+
+    .tab-item:hover{
+      background-color: #ccc;
+      transition: 0.35s;
+    }
+
+    .tab-img{
+      margin-bottom: 20px;
+    }
+
+    .tab-link{
+      text-decoration: none;
+      color: #333;
+    }
+
+    .tab-options{
+      font-size: 28px;
+      line-height: 5px;
+      background-color: #999;
+      
+
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+
+      opacity:0;
+      transform:translateY(-110px) translateX(72px);
+    }
+
+    .tab-options:hover{
+      opacity:1.0;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <ul class="tabs">
+    <li 
+      class="tab-item"
+      title="Access this account"
+    >
+        <a class="tab-link" href="https://github.com/">
+          <img class="tab-img" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/github-icon.png" alt=""><br/>
+        username here
+       </a>
+       <div class="tab-options" title="Other actions">
+        .<br/>.<br/>.
+       </div>
+    </li>
+
+    <li class="tab-item"  title="Access this account">
+      <a class="tab-link" href="https://www.youtube.com/">
+        <img class="tab-img" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/youtube-icon.png" alt=""><br>
+       username here
+      </a>
+      <div class="tab-options" title="Other actions">
+        .<br/>.<br/>. 
+      </div>
+    </li>
+
+    <li class="tab-item" title="Access this account" >
+      <a class="tab-link" href="https://www.facebook.com/">
+        <img class="tab-img" src="https://icons.iconarchive.com/icons/yootheme/social-bookmark/48/social-facebook-button-blue-icon.png" alt=""><br>username here</a>
+      <div class="tab-options" title="Other actions"> 
+        .<br/>.<br/>. 
+      </div>
+    </li>
+  </ul>
+  
+</body>
+</html>
