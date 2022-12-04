@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Directory Tree | CSS Pseudo Selectors</title>
+  <style>
+    body{
+      background-color: #222;
+    }
+
+    .tree{
+      color: white;
+      font-family: Arial;
+      font-size: 64px;;
+      
+    }
+
+    .folder{
+      padding: 24px 0 24px 72px;
+      /*height: 18px;*/
+      line-height: 18px;
+      /* new*/
+      /*border: 1px solid red;*/
+      background-image: url(images/Actions-document-open-icon.png);
+      background-repeat: no-repeat;
+      list-style-type: "┣";
+      }
+
+
+    .file{
+      padding: 24px 0 24px 72px;
+      /*height: 18px;*/
+      line-height: 18px;
+      /* new*/
+      /*border: 1px solid red;*/
+      background-image: url(images/Actions-document-properties-icon.png);
+      background-repeat: no-repeat;
+      list-style-type: "┣";
+      }
+
+      .file:last-child{
+        list-style-type: "┖";
+      }
+
+      .folder:last-child{
+        list-style-type: "┖";
+      }
+
+      .empty{
+        background-image: url(images/Places-folder-blue-icon.png);
+      }
+
+      .name{
+        font-size: 18px;
+      }
+
+      .folder:hover{
+        background-color: #333; 
+      }
+
+      .file:hover{
+        background-color: #999999;
+      }
+
+
+  </style>
+</head>
+<body>
+
+  <ul class="tree">
+    <li class="folder">
+      <div class="name"> PROJECT [done]</div>
+      <!--nested listed-->
+      <ul class="tree">
+        <li class="file">
+          <div class="name"> File1</div>
+        </li>
+        <li class="file">
+          <div class="name"> File2</div>
+        </li >
+      </ul>
+      
+     </li>
+
+    <li class="folder">
+      <div class="name"> PROJECT [now]</div>   
+    </li>
+
+<!--element - can have multiple classes------overriding-->
+    <li class="folder empty">
+      <div class="name"> PROJECT [to be]</div>
+    </li>
+  </ul>
+  
+</body>
+</html>
